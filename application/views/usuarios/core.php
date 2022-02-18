@@ -38,34 +38,34 @@ $this->load->view('layout/navbar');
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-header ik ik-calendar ik-1x"><?php echo(isset($usuario) ? '&nbsp; Data da ultima alteração: &nbsp;'.formata_data_banco_com_hora($usuario->data_ultima_alteracao) : ''); ?></div>
+                        <div class="card-header"><?php echo(isset($usuario) ? '<i class="ik ik-calendar ik-2x"></i> &nbsp; Data da ultima alteração: &nbsp;'.formata_data_banco_com_hora($usuario->data_ultima_alteracao) : ''); ?></div>
                         <div class="card-body">
 
-                            <form class="forms-sample">
+                            <form class="forms-sample" name="form_core" method="post">
                                 <div class="form-group">
-                                    <label for="exampleInputUsername1">Username</label>
-                                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                    <label>Nome</label>
+                                    <input type="text" class="form-control" name="first_name" value=" <?php echo(isset($usuario) ? $usuario->first_name : set_value('first_name')) ; ?> ">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="email" value=" <?php echo(isset($usuario) ? $usuario->email : set_value('email')) ?> ">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <label>Senha</label>
+                                    <input type="password" class="form-control" name="password" value=" <?php echo(isset($usuario) ? $usuario->password : set_value('password')) ?> ">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputConfirmPassword1">Confirm Password</label>
+                                    <label for="exampleInputConfirmPassword1">Confirme sua Senha</label>
                                     <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
                                 </div>
                                 <div class="form-group">
                                     <label class="custom-control custom-radio">
                                         <input type="radio" class="custom-control-input">
-                                        <span class="custom-control-label">&nbsp;Remember me</span>
+                                        <span class="custom-control-label">&nbsp;Lembre de mim</span>
                                     </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                                <button class="btn btn-light">Cancel</button>
+                                <button type="submit" class="btn btn-primary mr-2">Enviar</button>
+                                <button class="btn btn-light">Cancelar</button>
                             </form>
 
                         </div>
