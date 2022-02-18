@@ -42,30 +42,112 @@ $this->load->view('layout/navbar');
                         <div class="card-body">
 
                             <form class="forms-sample" name="form_core" method="post">
-                                <div class="form-group">
-                                    <label>Nome</label>
-                                    <input type="text" class="form-control" name="first_name" value=" <?php echo(isset($usuario) ? $usuario->first_name : set_value('first_name')) ; ?> ">
+
+                                <div class="form-group row">
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Nome</label>
+                                        <input type="text" class="form-control" name="first_name" value=" <?php echo(isset($usuario) ? $usuario->first_name : set_value('first_name')) ; ?> ">
+                                        <?php echo form_error('first_name', '<div class="text-danger">', '</div>');?>
+                                    </div>
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Sobrenome</label>
+                                        <input type="text" class="form-control" name="last_name" value=" <?php echo(isset($usuario) ? $usuario->last_name : set_value('last_name')) ; ?> ">
+                                        <?php echo form_error('last_name', '<div class="text-danger">', '</div>');?>
+                                    </div>
+
+                                   </div>
+
+                                <div class="form-group row">
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Usuario</label>
+                                        <input type="text" class="form-control" name="username" value=" <?php echo(isset($usuario) ? $usuario->username : set_value('username')) ; ?> ">
+                                        <?php echo form_error('username', '<div class="text-danger">', '</div>');?>
+                                    </div>
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Email (Login)</label>
+                                        <input type="text" class="form-control" name="email" value=" <?php echo(isset($usuario) ? $usuario->email : set_value('email')) ; ?> ">
+                                        <?php echo form_error('email', '<div class="text-danger">', '</div>');?>
+                                    </div>
+
+                                   </div>
+
+                                <div class="form-group row">
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Senha</label>
+                                        <input type="password" class="form-control" name="password" value="">
+                                        <?php echo form_error('password', '<div class="text-danger">', '</div>');?>
+                                    </div>
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Confirmar Senha</label>
+                                        <input type="password" class="form-control" name="confirmacao" value="">
+                                        <?php echo form_error('confirmacao', '<div class="text-danger">', '</div>');?>
+                                    </div>
+
+                                   </div>
+
+                                <div class="form-group row">
+
+                                    <div class="col-md-6 mb-20">
+                                        <label>Perfil de Acesso</label>
+                                        <select class="form-control" name="perfil">
+
+                                            <?php if(isset($usuario)): ?>
+
+                                            <option value="2" <?php echo($perfil_usuario->id==2 ? 'selected' : '') ?>>Atendente</option>
+                                            <option value="1" <?php echo($perfil_usuario->id==1 ? 'selected' : '') ?>>Administrador</option>
+
+                                            <?php else: ?>
+
+                                            <option value="2">Atendente</option>
+                                            <option value="1">Administrador</option>
+
+                                            <?php endif; ?>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-6 mb-20">
+
+                                        <label>Ativo</label>
+
+                                        <select class="form-control" name="active">
+
+                                            <?php if(isset($usuario)): ?>
+
+                                            <option value="0" <?php echo($usuario->active == 0 ? 'selected' : '') ?>>Não</option>
+                                            <option value="1" <?php echo($usuario->active == 1 ? 'selected' : '') ?>>Sim</option>
+
+                                            <?php else: ?>
+
+                                            <option value="0">Não</option>
+                                            <option value="1">Sim</option>
+
+                                            <?php endif; ?>
+
+                                        </select>
+
+                                    </div>
+
+                                    <?php if (isset($usuario)) : ?>
+                                    <div class="form-group row">
+                                    <div class="col-md-12">
+
+                                        <input type="hidden" class="form-control" name="usuario_id" value=" <?php echo $usuario->id; ?> ">
+                                    </div>
+
                                 </div>
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" name="email" value=" <?php echo(isset($usuario) ? $usuario->email : set_value('email')) ?> ">
+                                    <?php endif; ?>
+
                                 </div>
-                                <div class="form-group">
-                                    <label>Senha</label>
-                                    <input type="password" class="form-control" name="password" value=" <?php echo(isset($usuario) ? $usuario->password : set_value('password')) ?> ">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputConfirmPassword1">Confirme sua Senha</label>
-                                    <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <label class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input">
-                                        <span class="custom-control-label">&nbsp;Lembre de mim</span>
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-primary mr-2">Enviar</button>
-                                <button class="btn btn-light">Cancelar</button>
+
+                                <button data-toggle="tooltip" title="Enviar" type="submit" class="btn btn-primary mr-2">Enviar</button>
+                                <button data-toggle="tooltip" title="Cancelar" class="btn btn-light" href="" ">Cancelar</button>
                             </form>
 
                         </div>
