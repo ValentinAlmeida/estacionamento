@@ -71,26 +71,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | the query builder class.
 */
 $active_group = 'default';
-$query_builder = TRUE;
+$active_record = TRUE;
 
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'estacionamento',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => TRUE, //Para hospedagem
-	'failover' => array(),
-	'save_queries' => TRUE
-);
+$application_ini = parse_ini_file(getcwd() . '/application.ini', true);
+
+$db['default']['hostname'] = $application_ini['database']['host'];
+$db['default']['username'] = $application_ini['database']['user'];
+$db['default']['password'] = $application_ini['database']['pass'];
+$db['default']['database'] = $application_ini['database']['db'];
+$db['default']['dbdriver'] = 'mysqli';
+$db['default']['dbprefix'] = '';
+$db['default']['pconnect'] = TRUE;
+$db['default']['db_debug'] = TRUE;
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = '';
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci';
+$db['default']['swap_pre'] = '';
+$db['default']['autoinit'] = TRUE;
+$db['default']['stricton'] = FALSE;
+
+$db['estacionamento']['hostname'] = $application_ini['database_estacionamento']['host'];
+$db['estacionamento']['username'] = $application_ini['database_estacionamento']['user'];
+$db['estacionamento']['password'] = $application_ini['database_estacionamento']['pass'];
+$db['estacionamento']['database'] = $application_ini['database_estacionamento']['db'];
+$db['estacionamento']['dbdriver'] = 'mysqli';
+$db['estacionamento']['dbprefix'] = '';
+$db['estacionamento']['pconnect'] = TRUE;
+$db['estacionamento']['db_debug'] = TRUE;
+$db['estacionamento']['cache_on'] = FALSE;
+$db['estacionamento']['cachedir'] = '';
+$db['estacionamento']['char_set'] = 'utf8';
+$db['estacionamento']['dbcollat'] = 'utf8_general_ci';
+$db['estacionamento']['swap_pre'] = '';
+$db['estacionamento']['autoinit'] = TRUE;
+$db['estacionamento']['stricton'] = FALSE;

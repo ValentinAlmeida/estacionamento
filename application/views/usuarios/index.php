@@ -32,6 +32,47 @@ $this->load->view('layout/navbar');
                 </div>
 
 
+                <?php if($this->session->flashdata('success')) : ?>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <strong> <?php $this->session->flashdata("success") ?> </strong>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <i class="ik ik-x"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endif; ?>
+
+                <?php if($this->session->flashdata('danger')) : ?>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                        <strong> <?php $this->session->flashdata("danger") ?> </strong>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <i class="ik ik-x"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php endif; ?>
+
+
+
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">

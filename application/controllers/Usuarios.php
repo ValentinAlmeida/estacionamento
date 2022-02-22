@@ -46,19 +46,57 @@ class Usuarios extends CI_Controller{
 
                 exit('Usuario não existe');
 
-            }else{
+            }else {
 
                 //Editar usuario
 
                 $this->form_validation->set_rules('first_name', 'nome', 'trim|required|min_length[5]|max_length[20]');
                 $this->form_validation->set_rules('last_name', 'sobrenome', 'trim|required|min_length[5]|max_length[20]');
-                $this->form_validation->set_rules('username', 'usuario', 'trim|required|min_length[5]|max_length[20]');
-                $this->form_validation->set_rules('email', 'email', 'valid_email|trim|required|min_length[5]|max_length[200]');
+                $this->form_validation->set_rules('username', 'usuario', 'trim|required|min_length[5]|max_length[20]|callback_username_check');
+                $this->form_validation->set_rules('email', 'email', 'valid_email|trim|required|min_length[5]|max_length[200]|callback_email_check');
                 $this->form_validation->set_rules('password', 'senha', 'trim|min_length[8]');
                 $this->form_validation->set_rules('confirmacao', 'confirmar senha', 'trim|min_length[5]|matches[password]');
 
                 if($this->form_validation->run()){
 
+                    $data = elements(
+
+                        array(
+
+                            'first_name',
+                            'last_name',
+                            'username',
+                            'email',
+                            'password',
+                            'active',
+
+                        ), $this->input->post()
+
+                    );
+
+                    $password = $this->input->post('password');
+
+                    if(!$password){
+
+                        unset($data['password']);
+
+                    }
+
+
+                    $data = html_escape($data);
+
+                    if($this->ion_auth->update($usuario_id, $data)){
+
+                        $this->session->set_flashdata('success', 'Dados atualizados com sucesso!');
+
+
+                    }else{
+
+                        $this->session->set_flashdata('danger', 'Não foi possivel atualizar os dados');
+
+                    }
+
+                    redirect($this->router->fetch_class());
 
 
                 }else{
@@ -72,6 +110,7 @@ class Usuarios extends CI_Controller{
                         'page_usuarios' => $this->router->fetch_class(),
                         'usuario' => $this->ion_auth->user($usuario_id)->row(), //pegar todos os usuarios
                         'perfil_usuario' => $this->ion_auth->get_users_groups($usuario_id)->row(),
+
                     );
 
                 }
@@ -86,5 +125,29 @@ class Usuarios extends CI_Controller{
 
     }
 
+    public function username_check($username){
 
+        $usuario_id = $this->input->post('usuario_id');
+
+        if($this->core_model->get_by_id('users', array('username' => $username, 'id !=' => $usuario_id))){
+            $this->form_validation->set_message('username_check', 'Esse usuario já existe');
+        return FALSE;
+        }else{
+            return true;
+        }
+
+    }
+
+    public function email_check($email){
+
+        $usuario_id = $this->input->post('usuario_id');
+
+        if($this->core_model->get_by_id('users', array('email' => $email, 'id !=' => $usuario_id))){
+            $this->form_validation->set_message('email_check', 'Esse email já existe');
+        return FALSE;
+        }else{
+            return true;
+        }
+
+    }
 }
