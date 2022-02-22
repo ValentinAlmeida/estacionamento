@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.rst" beforeDir="false" afterPath="$PROJECT_DIR$/readme.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Usuarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Ion_auth_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Ion_auth_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/usuarios/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/core.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +137,7 @@
       <updated>1645187108178</updated>
       <workItem from="1645187110899" duration="7122000" />
       <workItem from="1645528591961" duration="3304000" />
-      <workItem from="1645532741647" duration="7744000" />
+      <workItem from="1645532741647" duration="17225000" />
     </task>
     <servers />
   </component>

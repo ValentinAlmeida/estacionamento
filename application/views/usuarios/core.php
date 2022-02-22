@@ -146,7 +146,7 @@ $this->load->view('layout/navbar');
                                 </div>
 
                                 <button data-toggle="tooltip" title="Enviar" type="submit" class="btn btn-primary mr-2">Enviar</button>
-                                <button data-toggle="tooltip" title="Cancelar" class="btn btn-light" href="" ">Cancelar</button>
+                                <a data-toggle="tooltip" title="Voltar" class="btn btn-info" href="<?php echo base_url($this->router->fetch_class()); ?>">Voltar</a>
                             </form>
 
                         </div>

@@ -76,7 +76,7 @@ $this->load->view('layout/navbar');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header"><a class="btn btn-success" href="">+Novo</a> </div>
+                            <div class="card-header"><a data-toggle="tooltip" title="Cadastrar usuario" class="btn btn-success" href="<?php echo base_url($this->router->fetch_class().'/core') ?>">+Novo</a> </div>
                             <div class="card-body">
                                 <table class="table data-table">
                                     <thead>
@@ -101,10 +101,29 @@ $this->load->view('layout/navbar');
                                         <td><?php echo ($this->ion_auth->is_admin($user->id) ? 'Administrador' : 'Atendente')  ?></td>
                                         <td><?php echo ($user->active == 1 ? '<span class="badge badge-pill badge-success mb-1">Sim</span>': '<span class="badge badge-pill badge-danger mb-1">Não</span>'); ?></td>
                                         <td class="text-right">
-                                            <a data-toggle="tooltip" data-placement="bottom" title="Editar <?php echo $this->router->fetch_class(); ?>" href="<?php echo base_url('usuarios/core/'.$user->id) ?>" class="btn btn-icon btn-primary"><i class="ik ik-edit-2"></i></a>
-                                            <a data-toggle="tooltip" data-placement="bottom" title="Excluir <?php echo $this->router->fetch_class(); ?>" href="" class="btn btn-icon btn-danger"><i class="ik ik-trash"></i></a>
+                                            <a data-toggle="tooltip" data-placement="bottom" title="Editar <?php echo $this->router->fetch_class(); ?>" href="<?php echo base_url($this->router->fetch_class().'/core/'.$user->id) ?>" class="btn btn-icon btn-primary"><i class="ik ik-edit-2"></i></a>
+                                            <button type="button" class="btn btn-icon btn-danger" data-toggle="modal" data-target="#user- <?php echo $user->id;?>" title="Excluir"><i class="ik ik-trash"></i></button>
                                         </td>
                                     </tr>
+
+                                        <div class="modal fade" id="user-<?php echo $user->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalCenterLabel">Modal title</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-danger">Sim, excluir</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     <?php endforeach; ?>
                                     </tbody>
                                 </table>

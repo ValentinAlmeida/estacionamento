@@ -5,7 +5,7 @@
 
                 <img src="<?php echo base_url('public/src/img/brand-white.svg')?>" class="header-brand-img" alt="lavalite">
             </div>
-            <span class="text">ThemeKit</span>
+            <span class="text">Crud</span>
         </a>
         <button type="button" class="nav-toggle"><i data-toggle="expanded" class="ik ik-toggle-right toggle-icon"></i></button>
         <button id="sidebarClose" class="nav-close"><i class="ik ik-x"></i></button>
