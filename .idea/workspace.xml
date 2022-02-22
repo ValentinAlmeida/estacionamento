@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/models/Core_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Usuarios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/language/portuguese-br/form_validation_lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/language/portuguese-br/form_validation_lang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/usuarios/core.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/core.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.rst" beforeDir="false" afterPath="$PROJECT_DIR$/readme.rst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +133,7 @@
       <updated>1645187108178</updated>
       <workItem from="1645187110899" duration="7122000" />
       <workItem from="1645528591961" duration="3304000" />
-      <workItem from="1645532741647" duration="7173000" />
+      <workItem from="1645532741647" duration="7744000" />
     </task>
     <servers />
   </component>
