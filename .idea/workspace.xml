@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/controllers/Login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/views/login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.ini" beforeDir="false" afterPath="$PROJECT_DIR$/application.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Usuarios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/home/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layout/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layout/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/navbar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +104,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -138,7 +143,7 @@
       <workItem from="1645532741647" duration="17619000" />
       <workItem from="1645616730467" duration="931000" />
       <workItem from="1645619079046" duration="2203000" />
-      <workItem from="1645621930037" duration="6629000" />
+      <workItem from="1645621930037" duration="11539000" />
     </task>
     <servers />
   </component>
@@ -193,7 +198,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/application/controllers/Usuarios.php</url>
-          <line>192</line>
+          <line>202</line>
           <properties>
             <option name="className" value="\Usuarios" />
             <option name="methodName" value="email_check" />

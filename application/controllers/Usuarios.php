@@ -3,6 +3,16 @@ defined('BASEPATH') OR exit('Ação não permitida');
 
 class Usuarios extends CI_Controller{
 
+    public function __construct(){
+        parent::__construct();
+
+        if (!$this->ion_auth->logged_in())
+        {
+            redirect('login');
+        }
+
+    }
+
     public function index(){
 
         $data = array(
@@ -221,7 +231,7 @@ class Usuarios extends CI_Controller{
 
             }
 
-            if($this->ion_auth->delete_user($usuario_id);){
+            if($this->ion_auth->delete_user($usuario_id)){
                 $this->session->set_flashdata('success', 'Usuario excluido com sucesso!');
             }else{
                 $this->session->set_flashdata('danger', 'Não foi possivel exvluir o usuario!');

@@ -11,7 +11,6 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
-    <?php echo base_url('public/')?>
     <link rel="stylesheet" href="<?php echo base_url('public/plugins/bootstrap/dist/css/bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('public/plugins/fontawesome-free/css/all.min.css')?>">
     <link rel="stylesheet" href="<?php echo base_url('public/plugins/icon-kit/dist/css/iconkit.min.css')?>">
