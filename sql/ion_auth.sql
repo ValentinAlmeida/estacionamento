@@ -89,6 +89,8 @@ INSERT INTO `users_groups` (`id`, `user_id`, `group_id`) VALUES
 
 DROP TABLE IF EXISTS `login_attempts`;
 
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'imtech123';
+
 #
 # Table structure for table 'login_attempts'
 #
@@ -100,5 +102,6 @@ CREATE TABLE `login_attempts` (
   `time` int(11) unsigned DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
