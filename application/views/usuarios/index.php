@@ -32,39 +32,31 @@ $this->load->view('layout/navbar');
                 </div>
 
 
-                <?php if($this->session->flashdata('success')) : ?>
+                <?php if($message = $this->session->flashdata('success')) : ?>
 
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                        <strong> <?php $this->session->flashdata("success") ?> </strong>
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <i class="ik ik-x"></i>
-                                        </button>
-                                    </div>
-                                </div>
+                            <div class="alert bg-success alert-success text-white alert-dismissible fade show" role="alert">
+                                <strong> <?php $message ?> </strong>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <i class="ik ik-x"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
 
                 <?php endif; ?>
 
-                <?php if($this->session->flashdata('danger')) : ?>
+                <?php if($message = $this->session->flashdata('danger')) : ?>
 
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                        <strong> <?php $this->session->flashdata("danger") ?> </strong>
+                                    <div class="alert bg-danger alert-danger text-white alert-dismissible fade show" role="alert">
+                                        <strong> <?php $message ?> </strong>
                                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                             <i class="ik ik-x"></i>
                                         </button>
                                     </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -102,23 +94,24 @@ $this->load->view('layout/navbar');
                                         <td><?php echo ($user->active == 1 ? '<span class="badge badge-pill badge-success mb-1">Sim</span>': '<span class="badge badge-pill badge-danger mb-1">Não</span>'); ?></td>
                                         <td class="text-right">
                                             <a data-toggle="tooltip" data-placement="bottom" title="Editar <?php echo $this->router->fetch_class(); ?>" href="<?php echo base_url($this->router->fetch_class().'/core/'.$user->id) ?>" class="btn btn-icon btn-primary"><i class="ik ik-edit-2"></i></a>
-                                            <button type="button" class="btn btn-icon btn-danger" data-toggle="modal" data-target="#user- <?php echo $user->id;?>" title="Excluir"><i class="ik ik-trash"></i></button>
+                                            <button title="Editar <?php echo $this->router->fetch_class(); ?>" type="button" class="btn btn-icon btn-danger" data-toggle="modal" href="" data-target="#user-<?php echo $user->id; ?>"><i class="ik ik-trash-2"></i></button>
                                         </td>
                                     </tr>
 
-                                        <div class="modal fade" id="user-<?php echo $user->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
+                                        <div class="modal fade" id="user-<?php echo $user->id ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalCenterLabel">Modal title</h5>
+                                                        <h5 class="modal-title" id="exampleModalCenterLabel"><i class="fas fa-exclamation-triangle text-danger" ></i> &nbsp; Tem certeza que deseja excluir o usuario?</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        ...
+                                                        <p>Se deseja excluir o usuario, clique em <strong>Sim, excluir</strong></p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não, voltar</button>
-                                                        <a data-toggle="tooltip" data-placement="bottom" title="Editar <?php echo $this->router->fetch_class(); ?>" href="<?php echo base_url($this->router->fetch_class().'/del/'.$user->id) ?>" class="btn btn-danger">Sim, excluir</a>
+                                                        <button data-toggle="tooltip" data-placement="bottom" title="Cancelar" type="button" class="btn btn-secondary" data-dismiss="modal">Não, voltar</button>
+                                                        <a data-toggle="tooltip" data-placement="bottom" title="Excluir <?php echo $this->router->fetch_class(); ?>" href="<?php echo base_url($this->router->fetch_class().'/del/'.$user->id) ?>" class="btn btn-danger">Sim, excluir</a>
+
                                                     </div>
                                                 </div>
                                             </div>

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="" />
+    <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.ini" beforeDir="false" afterPath="$PROJECT_DIR$/application.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Usuarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +138,7 @@
       <workItem from="1645532741647" duration="17619000" />
       <workItem from="1645616730467" duration="931000" />
       <workItem from="1645619079046" duration="2203000" />
-      <workItem from="1645621930037" duration="2786000" />
+      <workItem from="1645621930037" duration="6629000" />
     </task>
     <servers />
   </component>
@@ -188,12 +193,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/application/controllers/Usuarios.php</url>
-          <line>32</line>
+          <line>192</line>
           <properties>
             <option name="className" value="\Usuarios" />
-            <option name="methodName" value="core" />
+            <option name="methodName" value="email_check" />
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
