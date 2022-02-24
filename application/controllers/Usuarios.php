@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('Ação não permitida');
 
 class Usuarios extends CI_Controller{
 
+    /*
     public function __construct(){
         parent::__construct();
 
@@ -12,6 +13,7 @@ class Usuarios extends CI_Controller{
         }
 
     }
+    */
 
     public function index(){
 

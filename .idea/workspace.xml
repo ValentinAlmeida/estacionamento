@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Usuarios.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layout/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/sidebar.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/index.php" afterDir="false" />
     </list>
@@ -143,6 +146,7 @@
       <workItem from="1645636875684" duration="196000" />
       <workItem from="1645637121979" duration="201000" />
       <workItem from="1645703500051" duration="755000" />
+      <workItem from="1645712138592" duration="1942000" />
     </task>
     <servers />
   </component>
@@ -197,7 +201,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/application/controllers/Usuarios.php</url>
-          <line>202</line>
+          <line>204</line>
           <properties>
             <option name="className" value="\Usuarios" />
             <option name="methodName" value="email_check" />

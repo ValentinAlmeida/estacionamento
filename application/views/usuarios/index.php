@@ -31,12 +31,6 @@ $this->load->view('layout/navbar');
                     </div>
                 </div>
 
-                <?php
-                echo '<pre>';
-                print_r($this->session->flashdara('success'));
-                exit();
-                ?>
-
                 <?php if($message = $this->session->flashdata('success')) : ?>
 
 

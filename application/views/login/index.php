@@ -63,7 +63,6 @@
         </div>
     </div>
 </div>
-<?php echo base_url('')?>
 <script src="<?php echo base_url('https://code.jquery.com/jquery-3.3.1.min.js')?>"></script>
 <script>window.jQuery || document.write('<script src="<?php echo base_url('public/src/js/vendor/jquery-3.3.1.min.js')?>"><\/script>')</script>
 <script src="<?php echo base_url('public/plugins/popper.js/dist/umd/popper.min.js')?>"></script>
