@@ -20,6 +20,14 @@ class Sistema extends CI_Controller{
             'titulo' => 'Editar informações do sistema',
             'sub_titulo' => 'Editando as informações do sistema',
             'icone_view' => 'ik ik-settings',
+
+            'scripts' => array(
+
+                'plugins/mask/jquery.mask.min.js',
+                'plugins/mask/custom.js',
+
+            ),
+
             'sistema' => $this->core_model->get_by_id('sistema', array('sistema_id' => 1)),
 
         );

@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/views/sistema/core.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_session08e5d58060bcd6361f3a3f9da18f9715e6235a9a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_session31af08227ba46b3f3c92acb5bd8e98c7c4931e31" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_session3aab3642d42d38da3458ad31bf06f4e7fb39ad86" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_session3aac9f6061426011553e1b20b80d95427fff6e64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_session859e76b005609bdee48bfd41f98f9b6a2cf131ae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_session8cfdf48532777f464c2388e8552d482d5c767e47" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_sessiona8826984fb22b0e9218afe3030b3e378aead0476" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/cache/session/ci_sessionbb3419f5cec31625e25c1afbc977073b45491207" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Sistema.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Sistema.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/sistema/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/sistema/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +151,7 @@
       <workItem from="1645636875684" duration="196000" />
       <workItem from="1645637121979" duration="201000" />
       <workItem from="1645703500051" duration="755000" />
-      <workItem from="1645712138592" duration="3022000" />
+      <workItem from="1645712138592" duration="6141000" />
     </task>
     <servers />
   </component>
