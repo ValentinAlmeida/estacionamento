@@ -51,7 +51,7 @@
                             <i class="ik ik-user"></i>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" class="form-control" placeholder="Password" required="">
+                            <input type="password" name="password" class="form-control" placeholder="Senha" required="">
                             <i class="ik ik-lock"></i>
                         </div>
                         <div class="sign-btn text-center">

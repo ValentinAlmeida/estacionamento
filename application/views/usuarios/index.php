@@ -31,8 +31,14 @@ $this->load->view('layout/navbar');
                     </div>
                 </div>
 
+                <?php
+                echo '<pre>';
+                print_r($this->session->flashdara('success'));
+                exit();
+                ?>
 
                 <?php if($message = $this->session->flashdata('success')) : ?>
+
 
                     <div class="row">
                         <div class="col-md-12">
@@ -61,9 +67,6 @@ $this->load->view('layout/navbar');
                     </div>
 
                 <?php endif; ?>
-
-
-
 
                 <div class="row">
                     <div class="col-md-12">
