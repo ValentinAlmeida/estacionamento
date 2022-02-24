@@ -32,6 +32,38 @@ $this->load->view('layout/navbar');
                 </div>
             </div>
 
+            <?php if($message = $this->session->flashdata('success')) : ?>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert bg-success alert-success text-white alert-dismissible fade show" role="alert">
+                            <strong> <?php $message ?> </strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i class="ik ik-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            <?php endif; ?>
+
+            <?php if($message = $this->session->flashdata('danger')) : ?>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert bg-danger alert-danger text-white alert-dismissible fade show" role="alert">
+                            <strong> <?php $message ?> </strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <i class="ik ik-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            <?php endif; ?>
+
+
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
