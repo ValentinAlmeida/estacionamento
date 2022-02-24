@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b505d2c-8979-4a38-8cb8-aafe403a5f0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/application/views/sistema/core.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Usuarios.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Usuarios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/layout/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Sistema.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Sistema.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/layout/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/layout/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/usuarios/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/usuarios/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +106,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/application/views/sistema" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -122,6 +119,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\estacionamento\application\views\sistema" />
       <recent name="C:\xampp\htdocs\estacionamento" />
       <recent name="C:\xampp\htdocs\estacionamento\application" />
     </key>
@@ -146,7 +144,7 @@
       <workItem from="1645636875684" duration="196000" />
       <workItem from="1645637121979" duration="201000" />
       <workItem from="1645703500051" duration="755000" />
-      <workItem from="1645712138592" duration="1942000" />
+      <workItem from="1645712138592" duration="3022000" />
     </task>
     <servers />
   </component>
