@@ -39,15 +39,15 @@ class Core_model extends CI_Model{
 
         if($table && $this->db->table_exists($table) && is_array($data)){
 
-            $table->db->insert($table, $data);
+            $this->db->insert($table, $data);
 
             if($this->db->affected_rows()>0){ //se ocorrer a inserção ele entra no if
 
-                $table->session->set_flashdata('success', 'Dados salvos com Sucesso!');
+                $this->session->set_flashdata('success', 'Dados salvos com Sucesso!');
 
             }else{
 
-                $table->session->set_flashdata('danger', 'Não foi possivel salvar os dados');
+                $this->session->set_flashdata('danger', 'Não foi possivel salvar os dados');
 
             }
 

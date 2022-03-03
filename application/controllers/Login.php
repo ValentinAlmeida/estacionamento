@@ -24,7 +24,11 @@ class login extends CI_Controller{
         $remember = FALSE; // remember the user
 
         if($this->ion_auth->login($identity, $password, $remember)){
-            $this->session->set_flashdata('success', 'Sejá bem vindo(a)!');
+
+            $usuario = $this->core_model->get_by_id('users', array('email' => $identity));
+
+            $this->session->set_flashdata('success', 'Sejá bem vindo(a) '.$usuario->first_name);
+
             redirect('/');
         }else{
             $this->session->set_flashdata('danger', 'Email e/ou senha errados!');

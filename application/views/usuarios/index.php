@@ -65,7 +65,7 @@ $this->load->view('layout/navbar');
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header"><a data-toggle="tooltip" title="Cadastrar usuario" class="btn btn-success" href="<?php echo base_url($this->router->fetch_class().'/core') ?>">+Novo</a> </div>
+                            <div class="card-header d-block"><a data-toggle="tooltip" title="Cadastrar usuario" class="btn bg-blue float-right text-white" href="<?php echo base_url($this->router->fetch_class().'/core') ?>">+Novo</a> </div>
                             <div class="card-body">
                                 <table class="table data-table">
                                     <thead>
